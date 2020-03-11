@@ -1,0 +1,87 @@
+@import "style.css"; 
+
+.cast{
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100vw - 10%);
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.person{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 45%
+}
+
+#castImage{
+  width: 100%;
+  height: 100%;
+}
+
+break{
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}
+
+p{
+  font-size: 12px;
+}
+
+p::first-line{
+  font-size: 16px;
+}
+
+.webcam-canvas{
+  width: calc((100vw / 4) - 10%) !important;
+  height: calc((100vh / 2) - 95px) !important;
+}
+
+.youButton{
+  background: none;
+  border: none;
+  padding: 0!;
+  font-size: 12px;
+  color: #000;
+  font-family:'Inconsolata';
+}
+
+.youButton:hover{
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width : 780px) {
+
+  .person{
+    width: 33.33%;
+    height: 28%;
+    margin-bottom: 30px;
+  }
+
+  .webcam-canvas{
+    width: calc((100vw / 3) - 10%) !important;
+    height: calc((100vh / 3) - 80px) !important;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  .person{
+    width: 50%;
+    height: 30%;
+    margin-bottom: 40px;
+  }
+
+  .webcam-canvas{
+    width: calc((100vw / 2) - 10%) !important;
+    height: calc((100vh / 2.7) - 95px) !important;
+  }
+}
